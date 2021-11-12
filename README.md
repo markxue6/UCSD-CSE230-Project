@@ -1,4 +1,5 @@
 # UCSD-CSE230-Project
+team members: Feng Xue, Chishu Zhang, Ziyang Fan, Maoze Liu
 
 ## Proposal
 In this project, a simple chess game connect 4 will be implemented. The connect four game is quite similar to Gobang. It requires two players. There is a n*n board as:
