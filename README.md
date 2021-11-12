@@ -29,7 +29,7 @@ And user b choose the 0 as the next step. The board will be updated as:
   b a a a b x x<br>
   0 1 2 3 4 5 6
 
-When there is a four consecutive chess in the row or column or diagnal from the same user, the user win the game. Below is an board showing user a winning the game:
+When there is a four consecutive chess in the row or column or diagonal from the same user, the user wins the game. Below is a board showing user winning the game:
 
 > x x x x x x x<br>
   x x x b a x x<br>
@@ -44,5 +44,6 @@ In this project, we will use haskell brick library to build a nice looking user 
 * In single player mode, different difficulties can be set by user.
 * The size of the board can be set by user.
 * The number of consecuitive chess to win can be set by user.
+* If the chesses are full of the board and there are no four consecutive chesses, then there is a tie game result.
 
 If it is possible, we will extend our game to a networked two-player game. Two players can play the game on different computers. In all, our project will focus on a chess game. When implementing the game, if we find the above rules are too simple for four people, we will try to make it more complex.
