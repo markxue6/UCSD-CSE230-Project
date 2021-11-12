@@ -43,3 +43,6 @@ In this project, we will use haskell brick library to build a nice looking user 
 * We have single player mode to play against computer. The game algorithm is minimax.
 * In single player mode, different difficulties can be set by user.
 * The size of the board can be set to whatever user want.
+
+If it is possible, we will extend our game to a networked two player game. Two players can play the game on different computers.
+In all, our project will focus on a chess game. When implementing the game, if we find above rules are too easy for four people project we will change it to more complex.
