@@ -50,7 +50,7 @@ In this project, we will use haskell brick library to build a nice looking user 
 If it is possible, we will extend our game to a networked two-player game. Two players can play the game on different computers. In all, our project will focus on a chess game. When implementing the game, if we find the above rules are too simple for four people, we will try to make it more complex.
 
 
-MIlestone 2: Updates
+## MIlestone 2: Updates
 We have finish the main part of the project. Some of the group members have done researches on how the game logic can be implemented. Shuchi has finished the coding part of a prototype. Current game has a simple UI using show method and print on the command line. The gaming algorithm is minimax which calculates 4 more steps and AI will choose the best step to be the next move.
 
 We are planning to move the game to brick library in the next few weeks. There are a lot of challenges when we implemneted this project. For example, brick library and network library in Haskell is totally new for us. Feng Xue has natework programming experience in C++, but it still hard for him to figure it out in Haskell. Therefore, we are not going to add netwroking function. It will just the local chess game. From milestone 1 to milestone 2, we have zoom meeting every week. For the next two weeks, we will add brick libary to our project and give some test cases.
