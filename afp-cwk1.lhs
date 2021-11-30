@@ -1,7 +1,3 @@
-G52AFP Coursework 1 - Connect 4 Game
-   
-Shuchi Zhang
-scysz2@nottingham.ac.uk
 ----------------------------------------------------------------------
 
 For flexibility, we define constants for the row and column size of the
