@@ -1,0 +1,7 @@
+language: haskell
+ghc:
+  - "7.10"
+  - "7.8"
+
+script:
+  - stack --no-terminal --install-ghc test
