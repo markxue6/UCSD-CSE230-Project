@@ -169,4 +169,4 @@ drawBoard g = withBorderStyle BS.unicodeBold
   $ vBox rows
   where
     rows = [hBox $ tilesInRow r | r <- (_board g)]
-    tilesInRow row = [hLimit 7 $ withBorderStyle BS.unicodeBold $ B.border $ C.hCenter $ padAll 0 $ colorTile $ printPlayer pl | pl <- row]
+    tilesInRow row = [hLimit 6 $ withBorderStyle BS.unicodeBold $ B.border $ C.hCenter $ padAll 0 $ colorTile $ printPlayer pl | pl <- row]

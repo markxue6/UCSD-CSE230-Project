@@ -3,6 +3,7 @@ module Main where
 import Prelude
 import TwoPlayers (twoPlayers)
 import TwoPlayersLarge (twoPlayersLarge)
+import OnePlayer (onePlayer)
 
 import Brick
   ( App(..), AttrMap, BrickEvent(..), EventM, Next, Widget
@@ -33,7 +34,7 @@ drawCover = withBorderStyle BS.unicodeBold
   $ B.borderWithLabel (str "Welcome To the Connect 4 Game")
   $ vBox $ map (uncurry drawK)
   $ [ ("1", "Two Player Mode"),
-  ("2", "9*9 Two Player Mode"),
+  ("2", "9*9 Board Two Player Mode"),
   ("3", "One Player Mode")
   ]
     where
@@ -44,7 +45,8 @@ startGame :: String -> IO ()
 startGame s = case s of
   "1" -> twoPlayers
   "2" -> twoPlayersLarge
-  _ -> twoPlayersLarge
+  "3" -> onePlayer
+  _   -> error "Invalid Input"
 
 main :: IO ()
 main = do
