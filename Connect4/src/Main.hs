@@ -3,7 +3,8 @@ module Main where
 import Prelude
 import TwoPlayers (twoPlayers)
 import TwoPlayersLarge (twoPlayersLarge)
-import OnePlayer (onePlayer)
+import OnePlayerEasy (onePlayerEasy)
+import OnePlayerHard (onePlayerHard)
 
 import Brick
   ( App(..), AttrMap, BrickEvent(..), EventM, Next, Widget
@@ -35,7 +36,8 @@ drawCover = withBorderStyle BS.unicodeBold
   $ vBox $ map (uncurry drawK)
   $ [ ("1", "Two Player Mode"),
   ("2", "9*9 Board Two Player Mode"),
-  ("3", "One Player Mode")
+  ("3", "Play With AI (Easy)"),
+  ("4", "Play With AI (Hard)")
   ]
     where
       drawK a k = (padRight Max $ padLeft (Pad 1) $ str a)
@@ -45,8 +47,9 @@ startGame :: String -> IO ()
 startGame s = case s of
   "1" -> twoPlayers
   "2" -> twoPlayersLarge
-  "3" -> onePlayer
-  _   -> error "Invalid Input"
+  "3" -> onePlayerEasy
+  "4" -> onePlayerHard
+  _   -> error "Invalid input"
 
 main :: IO ()
 main = do

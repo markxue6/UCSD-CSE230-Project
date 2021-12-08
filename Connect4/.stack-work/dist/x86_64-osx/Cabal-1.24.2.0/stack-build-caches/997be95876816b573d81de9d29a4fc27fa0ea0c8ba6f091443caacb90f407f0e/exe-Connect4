@@ -1,16 +1,20 @@
 /Users/shuchizhang/Desktop/UCSD-CSE230-Project/Connect4/src/Main.hs:
-  hash: 500e10461c2fb1488e57451f8817476d29ce3fdd8cc722a558e38637a38db4a4
+  hash: 89c595bb1d10101e0b379b8c7f00f58fcaaf3e6b9cb025fcc993a5286b8daa57
+/Users/shuchizhang/Desktop/UCSD-CSE230-Project/Connect4/src/OnePlayerEasy.hs:
+  hash: eb35d0e9a415ed07221e867ec4c94489d2959e28362d117030a60dcdc6c2121e
 /Users/shuchizhang/Desktop/UCSD-CSE230-Project/Connect4/Connect4.cabal:
-  hash: 7d2b162b136001e6188f3e6b52c4877e563ed094ba28a938e31dde0068385bcc
+  hash: 6c6c0a2f3f75b3feed03931ecb291cdd9a39b1b0a61cec805ce32cad5314dc4f
 /Users/shuchizhang/Desktop/UCSD-CSE230-Project/Connect4/src/GameLogicTwo.hs:
   hash: 880e79fa3aa636c11dd9ee32cb82b15dc6e89d5536fc34c1462ecef90d88a3d8
-/Users/shuchizhang/Desktop/UCSD-CSE230-Project/Connect4/src/GameLogicOne.hs:
-  hash: fecd8457391416236b767ca0be2be681a0004606f8b34ec1dab77970c7930db8
+/Users/shuchizhang/Desktop/UCSD-CSE230-Project/Connect4/src/GameLogicHard.hs:
+  hash: 4b599f589b63c133f33836046450e624356c7e08232b86d2086e272642b3bf32
 /Users/shuchizhang/Desktop/UCSD-CSE230-Project/Connect4/src/GameLogicLarge.hs:
   hash: 0efefe01a01895d870d6e6907e3b46b9aae23fba129d0480739e3991e2fa8286
+/Users/shuchizhang/Desktop/UCSD-CSE230-Project/Connect4/src/OnePlayerHard.hs:
+  hash: 86a619a399baddc72c8979486897ee0164fe8b1b167abf192fca7ea1ea684350
+/Users/shuchizhang/Desktop/UCSD-CSE230-Project/Connect4/src/GameLogicEasy.hs:
+  hash: 5c95ef6bf9715e75237add640cd40b514b574e0d1afe67394d2f88dc8836d955
 /Users/shuchizhang/Desktop/UCSD-CSE230-Project/Connect4/src/TwoPlayersLarge.hs:
   hash: a3cfe2e11a96f2217c114f9d56497d9308548cfbd616d175c3d1efcda3df8c95
 /Users/shuchizhang/Desktop/UCSD-CSE230-Project/Connect4/src/TwoPlayers.hs:
   hash: 3b0424f1096662beaa40721d35fd467d7d94ba368b21525f97926b93bb750b8d
-/Users/shuchizhang/Desktop/UCSD-CSE230-Project/Connect4/src/OnePlayer.hs:
-  hash: 1e27bdd593cc4868246e578d1815a18749d8bc03434a8da7a9abbeacbe09f7ee
