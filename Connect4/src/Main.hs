@@ -2,6 +2,7 @@
 module Main where
 import Prelude
 import TwoPlayers (twoPlayers)
+import TwoPlayersLarge (twoPlayersLarge)
 
 import Brick
   ( App(..), AttrMap, BrickEvent(..), EventM, Next, Widget
@@ -31,9 +32,9 @@ drawCover = withBorderStyle BS.unicodeBold
   $ hLimit 80
   $ B.borderWithLabel (str "Welcome To the Connect 4 Game")
   $ vBox $ map (uncurry drawK)
-  $ [ ("2", "Two Player Mode"),
-  ("2", "Two Player Mode"),
-  ("2", "Two Player Mode")
+  $ [ ("1", "Two Player Mode"),
+  ("2", "9*9 Two Player Mode"),
+  ("3", "One Player Mode")
   ]
     where
       drawK a k = (padRight Max $ padLeft (Pad 1) $ str a)
@@ -41,8 +42,9 @@ drawCover = withBorderStyle BS.unicodeBold
 
 startGame :: String -> IO ()
 startGame s = case s of
-  "2" -> twoPlayers
-  _ -> twoPlayers
+  "1" -> twoPlayers
+  "2" -> twoPlayersLarge
+  _ -> twoPlayersLarge
 
 main :: IO ()
 main = do

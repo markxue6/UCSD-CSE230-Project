@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 module TwoPlayers (twoPlayers, Tick, MyT, drawUI, theMap, moveg, initGame) where
-import GameLogic
+import GameLogicTwo
 import Data.Maybe
 import Data.List
 import Prelude
