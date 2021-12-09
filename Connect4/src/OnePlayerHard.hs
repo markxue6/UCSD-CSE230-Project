@@ -152,7 +152,10 @@ drawGameStatus g =
   if (not (_done g))
     then hLimit 11 $ withAttr gameOverAttr $ C.hCenter $ str ((printPlayer (_player g)) ++ "'s  move")
     else case isFull (_board g) of
-      True -> hLimit 11 $ withAttr gameOverAttr $ C.hCenter $ str "Board is Full"
+      True -> case gameOver (_board g) (_player g) of
+        True  -> hLimit 11 $ withAttr gameOverAttr $ C.hCenter $ str ((printPlayer ((_player g))) ++ " win")
+        False -> hLimit 11 $ withAttr gameOverAttr $ C.hCenter $ str ((printPlayer (nextPlayer (_player g))) ++ " win")
+        _     -> hLimit 11 $ withAttr gameOverAttr $ C.hCenter $ str "Full"
       _    -> case gameOver (_board g) (_player g) of
         True -> hLimit 11 $ withAttr gameOverAttr $ C.hCenter $ str ((printPlayer ((_player g))) ++ " win")
         _    -> hLimit 11 $ withAttr gameOverAttr $ C.hCenter $ str ((printPlayer (nextPlayer (_player g))) ++ " win")

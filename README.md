@@ -55,14 +55,16 @@ We have finish the main part of the project. Some of the group members have done
 
 We are planning to move the game to brick library in the next few weeks. There are a lot of challenges when we implemneted this project. For example, brick library and network library in Haskell is totally new for us. Feng Xue has natework programming experience in C++, but it still hard for him to figure it out in Haskell. Therefore, we are not going to add netwroking function. It will just the local chess game. From milestone 1 to milestone 2, we have zoom meeting every week. For the next two weeks, we will add brick libary to our project and give some test cases.
 
-## First Version
+## Set Up The Game
 
-The first version contains a two player version game. To Play the game, clone the repository and enter the following instructions sequecially:
+The Game can be played on Linux or Unix. To Play the game, clone the repository and enter the following instructions sequecially:
 
 >cd Connect4
+
+>stack setup
 
 >stack build
 
 >stack exec Connect4
 
-Then the main page will pop out in the terminal. Press 2 on the keyboard and press enter, the game should be able to play.
+Then the main page will pop out in the terminal. Press enter and then choose your desired game mode and press enter again, the game should be able to play.
